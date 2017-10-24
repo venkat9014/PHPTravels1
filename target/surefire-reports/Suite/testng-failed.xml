@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]" parallel="tests">
+  <test name="TestChrome(failed)" parallel="tests">
+    <parameter name="node" value="http://192.168.58.1:4444/wd/hub"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.PHPTravels.script.Accounts.Customers.UpdateCustomerUser">
+        <methods>
+          <include name="testUpdateCustomerUser"/>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- com.PHPTravels.script.Accounts.Customers.UpdateCustomerUser -->
+      <class name="com.PHPTravels.script.Accounts.Customers.CreateCustomerUser">
+        <methods>
+          <include name="testCreateCustomerUser"/>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- com.PHPTravels.script.Accounts.Customers.CreateCustomerUser -->
+      <class name="com.PHPTravels.script.Accounts.Customers.DeleteCustomerUser">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- com.PHPTravels.script.Accounts.Customers.DeleteCustomerUser -->
+    </classes>
+  </test> <!-- TestChrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
